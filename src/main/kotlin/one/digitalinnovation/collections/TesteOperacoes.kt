@@ -13,5 +13,7 @@ fun main() {
     //println(" Maior Salario: ${salarios.min()}")
     println(" Media Salario: ${salarios.average()}")
 
+    val salarioMaiorQue2500 = salarios.filter { it >1500.0 }
     println("--------------------------")
+    salarioMaiorQue2500.forEach { println(it) }
 }
