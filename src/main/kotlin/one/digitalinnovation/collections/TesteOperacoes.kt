@@ -12,4 +12,6 @@ fun main() {
     //println(" Maior Salario: ${salarios.max()}")
     //println(" Maior Salario: ${salarios.min()}")
     println(" Media Salario: ${salarios.average()}")
+
+    println("--------------------------")
 }
