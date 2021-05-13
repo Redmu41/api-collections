@@ -5,12 +5,13 @@ import kotlin.math.max
 fun main() {
     val salarios = doubleArrayOf(1000.0, 2000.0, 4000.0)
 
-    salarios.forEach { println(it) }
+    for (salario in salarios){
+     println(salario) }
 
     println("--------------------------")
 
-    //println(" Maior Salario: ${salarios.max()}")
-    //println(" Maior Salario: ${salarios.min()}")
+    println(" Maior Salario: ${salarios.maxOrNull()}")
+    println(" Menor Salario: ${salarios.minOrNull()}")
     println(" Media Salario: ${salarios.average()}")
 
     val salarioMaiorQue2500 = salarios.filter { it >1500.0 }
